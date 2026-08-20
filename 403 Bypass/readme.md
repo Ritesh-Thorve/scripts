@@ -13,16 +13,16 @@ pip install requests --break-system-packages
 
 ```bash
 # Single endpoint
-python3 bypass403.py -u https://api.example.com/images
+python3 bypass_403.py -u https://api.example.com/images
 
 # Batch — one URL per line
-python3 bypass403.py -l 403_hits.txt -o results.json
+python3 bypass_403.py -l 403_hits.txt -o results.json
 
 # With a session cookie / auth header
-python3 bypass403.py -u https://api.example.com/images -H "Cookie: session=xxx"
+python3 bypass_403.py -u https://api.example.com/images -H "Cookie: session=xxx"
 
 # Throttle for rate-limited targets
-python3 bypass403.py -u https://api.example.com/images --delay 0.5 -t 5
+python3 bypass_403.py -u https://api.example.com/images --delay 0.5 -t 5
 ```
 
 ## Flags
